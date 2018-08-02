@@ -369,26 +369,3 @@ x, y = np.random.multivariate_normal(mean, cov, len(Return['BHP.AX'])).T
 plt.figure(figsize=(8,8))
 plt.scatter(x, y)
 plt.title('Simulated Joint Normal Distribution Using BHP and CBA')
-
-
-# In[87]:
-
-
-#return-risk trade off plot
-# fig, ax = plt.subplots()
-# plt.scatter(stkret2['std'], stkret2['mean'], marker='o', color='r', s=100)
-# for label, x, y in zip(stkret2.index, stkret2['std'], stkret2['mean']):
-#     plt.annotate(
-#         label, 
-#         xy = (x, y), xytext = (-30, 20),
-#         textcoords = 'offset points', ha = 'right', va = 'bottom',
-#         #bbox = dict(boxstyle = 'round,pad=0.5', fc = 'yellow', alpha = 0.5),
-#         arrowprops = dict(arrowstyle = '->', connectionstyle = 'arc3,rad=0.1'))
-# ax.spines['right'].set_visible(False)
-# ax.spines['top'].set_visible(False)
-# ax.xaxis.set_ticks_position('bottom')
-# ax.yaxis.set_ticks_position('left')
-# plt.xlabel('standard devation')
-# plt.ylabel('annualized return')
-# plt.title('Risk Return Tradeoff')
-
